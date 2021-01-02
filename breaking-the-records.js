@@ -3,8 +3,8 @@
 */
 
 function breakingRecords(scores) {
-   let min = scores[0];
-   let max = scores[0];
+   let min = 0;
+   let max = 0;
    let sumMin = 0;
    let sumMax = 0;
    scores.forEach((elem) => {
