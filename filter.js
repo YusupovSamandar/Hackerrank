@@ -10,4 +10,13 @@ function filterAct(arr) {
       }
    })
 }
+
+function findMin() {
+   let min = arr[0];
+   arr.forEach(function (elem) {
+      if (elem < min) {
+         min = elem;
+      }
+   });
+}
 filterAct([12, 45, 76, 80, 103, 10, 7]);
