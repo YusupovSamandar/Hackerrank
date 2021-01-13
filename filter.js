@@ -1,5 +1,5 @@
 /*
-   Filter
+   Filter Numbers
 */
 function filterAct(arr) {
    arr.filter(function (value, indx) {
@@ -32,3 +32,23 @@ function calculateSum(arr) {
 }
 
 filterAct([12, 45, 76, 80, 103, 10, 7]);
+findMin([12, 45, 76, 80, 103, 10, 7]);
+calculateSum([12, 45, 76, 80, 103, 10, 7]);
+
+
+/*
+   Filter String
+*/
+
+
+function filterLengthBy7(arr) {
+   let newArr = arr.filter(function (elem, indx) {
+      if (elem.length <= 7) {
+         return true;
+      } else {
+         return false;
+      }
+   });
+}
+
+filterLengthBy7(["Maftuna", "Otabek", "Samandar", "Muqaddam", "Mohinur", "Abdushukur", "Angela", "David"]);
