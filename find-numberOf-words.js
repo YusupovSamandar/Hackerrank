@@ -8,5 +8,5 @@ function findWords(text) {
    return result
 }
 
-findWords(text)
+findWords(text);
 
