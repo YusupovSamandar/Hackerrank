@@ -52,3 +52,15 @@ function filterLengthBy7(arr) {
 }
 
 filterLengthBy7(["Maftuna", "Otabek", "Samandar", "Muqaddam", "Mohinur", "Abdushukur", "Angela", "David"]);
+
+function vowelFilter(text) {
+   let splittedText = text.split("")
+   return splittedText.filter(function (elem) {
+      if (elem === "a" || elem === "e" || elem === "i" || elem === "o" || elem === "u") {
+         return true;
+      } else {
+         return false;
+      }
+   });
+}
+vowelFilter("Five little ducks swimming out one day, over the hills and far away");
