@@ -78,3 +78,9 @@ function consonantFilter(text) {
 consonantFilter("Five little ducks swimming out one day, over the hills and far away");
 
 
+function filterByRate(data) {
+   return data.filter((elem) => (elem.rate > 5) ? true : false).map((elem) => ({
+      title: elem.title,
+      detail: elem.detail
+   }));
+}
