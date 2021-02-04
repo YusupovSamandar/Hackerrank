@@ -47,8 +47,18 @@ let newsList = [
       rate: 5
    }
 ];
-function sortedByRate() {
-   return newsList.sort(function (a, b) {
+function sortedByRate(data) {
+   return data.sort(function (a, b) {
       return a.rate - b.rate;
    });
+}
+
+function filterBarca(data) {
+   return data.filter(function (elem) {
+      if (elem.title >= "Barca") {
+         return true;
+      } else {
+         return false;
+      }
+   })
 }
