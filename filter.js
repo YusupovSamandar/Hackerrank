@@ -64,3 +64,15 @@ function vowelFilter(text) {
    });
 }
 vowelFilter("Five little ducks swimming out one day, over the hills and far away");
+
+function consonantFilter(text) {
+   return splittedText.filter(function (elem) {
+      if (elem === "a" || elem === "e" || elem === "i" || elem === "o" || elem === "u" || elem === " ") {
+         return false;
+      } else {
+         return true;
+      }
+   });
+}
+
+consonantFilter("Five little ducks swimming out one day, over the hills and far away");
